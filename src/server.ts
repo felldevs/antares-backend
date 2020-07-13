@@ -1,10 +1,10 @@
 import express from 'express';
-import '@controllers/UserController';
+import '@controllers/UsersController';
 
 const app = express();
 
 app.get('/', (request, response) => {
-    return response.json({ shoutout: 'Its grind season, homie!'});
-});
+  return response.json({ shoutout: 'Damn it!' });
+})
 
-app.listen(3333);
+app.listen(3333)
